@@ -1,0 +1,78 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+<style>
+.big_text{color:#C3D69B}
+A:link    {color:#C3D69B;text-decoration:none;} /* 아직 방문하지 않은경우 */
+A:visited {color:#C3D69B; text-decoration:none; } /* 한번 이상 방문한 링크 처리 */
+A:hover  {color:#C3D69B; text-decoration:underline; }
+</style>
+<script>
+            alert(navigator.userAgent);
+
+            window.onload = function() {
+                var image = document.getElementById("image");
+                var i = 0;
+                setInterval(function() {
+                    i++;
+                    i = i % 3 + 1;
+                    image.src = "img/" + i + ".png"
+                }, 1000);
+            }
+       </script>
+</head>
+<body>
+<header> <div class="text-center">
+    <br>
+   <a href = "./main_page.html" class="big_text"><img src="img/main.png"></a>
+   <img src="img/line.png" width="70%"><br>
+   <br><br>
+   <p class="big_text" >
+   <a href="입학"><img src="img/admission.png"></a>&nbsp;&nbsp;&nbsp;<a href=""><img src="img/attend.png"></a>&nbsp;&nbsp;&nbsp;<img scr=""> <a href=""><img src="img/mem.png"></a>
+  </p>
+  <img src="img/line.png" width="70%">
+  <br>
+
+  </div>
+</header>
+<br><br>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm-6">
+      <h3 class="big_text">♥News♥</h3>
+      <img src="img/hot_news.png" width="500" >
+      <br><br><br>
+      <img src="img/csnews.png"width="500" >
+    </div>
+    <div class="col-sm-4">
+    <h3 class="big_text">♥</h3>
+      <img src="img/3.png"  id="image" >
+    </div>
+    <div class="col-sm-2">
+    <h3 class="big_text">♥</h3>
+  <img src="img/CS_way.png" >
+  <br><br><br>
+  <img src="img/gnu_way.png">
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br><br><br>
+
+<div class="container">
+  <div class ="row justify-content-center">
+    <br>
+    <br>
+    <h3 class = "big_text" > ♥Links♥</h3>
+
+    <a href="http://catlas.gnu.ac.kr"><img src="img/catlas.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://gnu.ac.kr"><img src="img/gnu.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://nis.gnu.ac.kr"><img src="img/nis.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://e-campus.gnu.ac.kr"><img src="img/e-campus.png"></a>
+  </div>
+  </div>
+
+</body>
+</html>
